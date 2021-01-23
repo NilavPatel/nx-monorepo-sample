@@ -16,8 +16,13 @@
             "polyfills": "apps/app1/src/polyfills.ts",
             "tsConfig": "apps/app1/tsconfig.app.json",
             "aot": true,
-            "assets": ["apps/app1/src/favicon.ico", "apps/app1/src/assets"],
-            "styles": ["apps/app1/src/styles.scss"],
+            "assets": [
+              "apps/app1/src/favicon.ico",
+              "apps/app1/src/assets"
+            ],
+            "styles": [
+              "apps/app1/src/styles.scss"
+            ],
             "scripts": []
           },
           "configurations": {
@@ -75,12 +80,17 @@
               "apps/app1/tsconfig.spec.json",
               "apps/app1/tsconfig.editor.json"
             ],
-            "exclude": ["**/node_modules/**", "!apps/app1/**/*"]
+            "exclude": [
+              "**/node_modules/**",
+              "!apps/app1/**/*"
+            ]
           }
         },
         "test": {
           "builder": "@nrwl/jest:jest",
-          "outputs": ["coverage/apps/app1"],
+          "outputs": [
+            "coverage/apps/app1"
+          ],
           "options": {
             "jestConfig": "apps/app1/jest.config.js",
             "passWithNoTests": true
@@ -109,8 +119,13 @@
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": ["apps/app1-e2e/tsconfig.e2e.json"],
-            "exclude": ["**/node_modules/**", "!apps/app1-e2e/**/*"]
+            "tsConfig": [
+              "apps/app1-e2e/tsconfig.e2e.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!apps/app1-e2e/**/*"
+            ]
           }
         }
       }
@@ -130,8 +145,13 @@
             "polyfills": "apps/app2/src/polyfills.ts",
             "tsConfig": "apps/app2/tsconfig.app.json",
             "aot": true,
-            "assets": ["apps/app2/src/favicon.ico", "apps/app2/src/assets"],
-            "styles": ["apps/app2/src/styles.scss"],
+            "assets": [
+              "apps/app2/src/favicon.ico",
+              "apps/app2/src/assets"
+            ],
+            "styles": [
+              "apps/app2/src/styles.scss"
+            ],
             "scripts": []
           },
           "configurations": {
@@ -189,12 +209,17 @@
               "apps/app2/tsconfig.spec.json",
               "apps/app2/tsconfig.editor.json"
             ],
-            "exclude": ["**/node_modules/**", "!apps/app2/**/*"]
+            "exclude": [
+              "**/node_modules/**",
+              "!apps/app2/**/*"
+            ]
           }
         },
         "test": {
           "builder": "@nrwl/jest:jest",
-          "outputs": ["coverage/apps/app2"],
+          "outputs": [
+            "coverage/apps/app2"
+          ],
           "options": {
             "jestConfig": "apps/app2/jest.config.js",
             "passWithNoTests": true
@@ -223,33 +248,43 @@
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": ["apps/app2-e2e/tsconfig.e2e.json"],
-            "exclude": ["**/node_modules/**", "!apps/app2-e2e/**/*"]
+            "tsConfig": [
+              "apps/app2-e2e/tsconfig.e2e.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!apps/app2-e2e/**/*"
+            ]
           }
         }
       }
     },
-    "header": {
+    "ui": {
       "projectType": "library",
-      "root": "libs/header",
-      "sourceRoot": "libs/header/src",
+      "root": "libs/ui",
+      "sourceRoot": "libs/ui/src",
       "prefix": "nx-monorepo-sample",
       "architect": {
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "libs/header/tsconfig.lib.json",
-              "libs/header/tsconfig.spec.json"
+              "libs/ui/tsconfig.lib.json",
+              "libs/ui/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/header/**/*"]
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/ui/**/*"
+            ]
           }
         },
         "test": {
           "builder": "@nrwl/jest:jest",
-          "outputs": ["coverage/libs/header"],
+          "outputs": [
+            "coverage/libs/ui"
+          ],
           "options": {
-            "jestConfig": "libs/header/jest.config.js",
+            "jestConfig": "libs/ui/jest.config.js",
             "passWithNoTests": true
           }
         }

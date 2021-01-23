@@ -26,10 +26,10 @@
     "workspace-generator": "nx workspace-generator",
     "dep-graph": "nx dep-graph",
     "help": "nx help",
-    "app1:build":"ng build app1",
-    "app1:serve":"ng serve app1 --port 4200",
-    "app2:build":"ng build app2",
-    "app2:serve":"ng serve app2 --port 4300"
+    "app1:build": "ng build app1",
+    "app1:serve": "ng serve app1 --port 4200",
+    "app2:build": "ng build app2",
+    "app2:serve": "ng serve app2 --port 4300"
   },
   "private": true,
   "dependencies": {

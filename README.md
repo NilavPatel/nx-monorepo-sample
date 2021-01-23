@@ -11,10 +11,9 @@ and select SASS as default stylesheet format
 and select TSLint as default linter  
 and select No to use Nx Cloud  
 - $ npx nx g @nrwl/angular:app app2
-- $ npx nx g @nrwl/angular:lib header
-- Use visual studio code's Nx plugin to create header component in  
-header library
-- Now Add refrence of header module in both app's main module, and use shared lib in both app.
+- $ npx nx g @nrwl/angular:lib ui
+- $ npx nx g component header --project=ui --export
+- Now Add refrence of ui module in both app's main module, and use shared lib in both app.
 
 ## How to run?
 - Run both app with port 4200 and 4300  
